@@ -1,4 +1,3 @@
-# from pprint import pprint
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -154,4 +153,5 @@ def main():
 
 
 print("Welcome to love sandwiches Data Automation\n")
+print("Let's begin\n")
 main()
