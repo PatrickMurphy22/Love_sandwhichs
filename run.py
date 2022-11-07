@@ -26,7 +26,7 @@ def get_sales_data():
         print("Data shoud be siz numebrs, separated by commas.")
         print("Example: 10,20,30,40,50,60 \n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:\n ")
 
         sales_data = data_str.split(",")
 
@@ -49,8 +49,8 @@ def validate_data(values):
             raise ValueError(
                 f"Exactly 6 values required, you provided {len(values)}"
             )
-    except ValueError as e:
-        print(f"Invalid data: {e}, please try again. \n")
+    except ValueError as error:
+        print(f"Invalid data: {error}, please try again. \n")
         return False
 
     return True
@@ -155,5 +155,3 @@ def main():
 
 print("Welcome to love sandwiches Data Automation\n")
 main()
-
-
